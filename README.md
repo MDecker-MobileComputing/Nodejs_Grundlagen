@@ -1,8 +1,7 @@
 # Grundlagen Node.js
 
 This repository contains some files to demonstrate the basic usage of [Node.js](https://nodejs.org),
-a runtime for the JavaScript on desktop computers and servers.
-
+a runtime to execute JavaScript programs on desktop computers and servers.
 
 ----
 # License
