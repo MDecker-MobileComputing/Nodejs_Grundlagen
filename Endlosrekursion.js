@@ -8,10 +8,10 @@
  function meineFunktion(zahl) {
 
     zahl++;
-    console.log(`zahl=${zahl}`);
 
-    if (zahl > 0) { return meineFunktion( zahl ); }
-    else { return zahl; }
+    if (zahl % 100 == 0) { console.log(`zahl=${zahl}`); }
+
+    return meineFunktion( zahl );
  }
 
 
