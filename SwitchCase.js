@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 
 /*
  * This file is licensed under the terms of the BSD 3-Clause License.
@@ -39,7 +38,7 @@ switch ( einString ) {
     case "MA": console.log( "Mannheim"   ); break;
     case "HD": console.log( "Heidelberg" ); break;
 
-    default: 
+    default:
         console.log("Unbekanntes KFZ-Kennzeichen.");
 }
 
