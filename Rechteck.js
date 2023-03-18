@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 
 /*jshint esversion: 6 */
 
@@ -54,14 +53,20 @@ console.log(`Umfang von Rechteck 2: ${umfang2}.\n`);
 
 
 if (rechteck1.getFlaeche === rechteck2.getFlaeche) {
+
     console.log("Selbe getFlaeche()-Methoden.");
+
 } else {
+
     console.log("Unterschiedliche getFlaeche()-Methoden.");
 }
 
 if (rechteck1.getUmfang === rechteck2.getUmfang) {
+
     console.log("Selbe getUmfang()-Methoden.\n");
+
 } else {
+
     console.log("Unterschiedliche getUmfang()-Methoden.\n");
 }
 
@@ -69,6 +74,7 @@ if (rechteck1.getUmfang === rechteck2.getUmfang) {
 // *** Ab hier: Unterklasse "Quader" ("erbt" von Klasse "Rechteck") ***
 
 function Quader(laenge, breite, hoehe) {
+
 	Rechteck.call(this, laenge, breite);
 	this.hoehe = hoehe;
 }

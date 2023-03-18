@@ -1,13 +1,14 @@
-#!/usr/bin/env node
 
 /*
  * This file is licensed under the terms of the BSD 3-Clause License.
  */
 
- 
-function addieren(zahl1, zahl2) { 
+
+function addieren(zahl1, zahl2) {
+
     return zahl1 + zahl2;
 }
+
 
 const summe1 = addieren(1);
 console.log(`\nSumme1: ${summe1}`);

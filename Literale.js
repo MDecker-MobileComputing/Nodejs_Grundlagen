@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 
 /*
  * This file is licensed under the terms of the BSD 3-Clause License.
@@ -16,4 +15,4 @@ let meinObjekt = { titel  : "Großes Buch der Allwissenheit",
                    jahr   : 2001
                  };
 
-console.log(`\nBuchtitel: ${meinObjekt.titel}\n`); 
+console.log(`\nBuchtitel: ${meinObjekt.titel}\n`);
