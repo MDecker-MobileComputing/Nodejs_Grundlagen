@@ -7,6 +7,10 @@ a runtime to execute JavaScript programs on desktop computers and servers.
 
 <br>
 
+See also [this repository](https://github.com/MDecker-MobileComputing/Nodejs_Tastatureingabe) on how to read user input via the keyboard.
+
+<br>
+
 ----
 
 ## License ##
