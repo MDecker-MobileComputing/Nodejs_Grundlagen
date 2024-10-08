@@ -34,5 +34,5 @@ beschreibung = typeof(meineVariable);  // auch "object" wegen Abwärtskompatibil
 console.log( meineVariable + ": " + beschreibung );
 
 
-// Es gibt seit ES6 noch den Typ Symbol, der hier aber
+// Es gibt seit ES6 noch den Typ "Symbol", der hier aber
 // nicht behandelt werden soll.
