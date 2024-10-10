@@ -26,9 +26,10 @@ class Kreis {
 
 const kreis1 = new Kreis(5);
 
-console.log(`Radius von Kreis: ${kreis1.radius}`);
-console.log(`Umfang von Kreis: ${kreis1.getUmfang()}`);
+console.log(`Radius von Kreis: ${kreis1.radius}`      );
+console.log(`Umfang von Kreis: ${kreis1.getUmfang()}` );
 console.log(`Fläche von Kreis: ${kreis1.getFlaeche()}`);
+
 console.log();
 
 
