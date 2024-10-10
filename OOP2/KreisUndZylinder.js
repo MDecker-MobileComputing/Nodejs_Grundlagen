@@ -23,6 +23,7 @@ class Kreis {
     }
 }
 
+console.log();
 
 const kreis1 = new Kreis(5);
 
