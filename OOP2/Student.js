@@ -1,4 +1,6 @@
 /**
+ * Beispiel für Verwendung Schlüsselwörter "get" und "set" in einer Klasse.
+ *
  * Für die Matrikelnummer gibt es nur einen Getter, aber keinen Setter.
  */
 class Student {
