@@ -1,20 +1,24 @@
 class Kreis {
 
     constructor(radius) {
+
         this.radius = radius;
     }
 
     getUmfang() {
+
         const umfang = 2 * Math.PI * this.radius;
         return this._runden(umfang);
     }
 
     getFlaeche() {
+
         const flaeche = Math.PI * Math.pow(this.radius, 2);
         return this._runden(flaeche);
     }
 
     _runden(wert)  {
+
         return Math.trunc(wert * 100) / 100;
     }
 }
@@ -33,16 +37,19 @@ console.log();
 class Zylinder extends Kreis {
 
     constructor(radius, hoehe) {
+
         super(radius);
         this.hoehe = hoehe;
     }
 
     getVolumen() {
+
         const volumen = this.getFlaeche() * this.hoehe;
         return this._runden(volumen);
     }
 
     getOberflaeche() {
+
         const oberflaeche = 2 * this.getFlaeche() + this.getUmfang() * this.hoehe;
         return this._runden(oberflaeche);
     }
