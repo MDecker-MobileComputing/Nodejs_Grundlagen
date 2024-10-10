@@ -57,6 +57,12 @@ class Zylinder extends Kreis {
     }
 }
 
-const zylinder1 = new Zylinder(5, 10);
-console.log(`Volumen von Zylinder   : ${zylinder1.getVolumen()}`);
-console.log(`Oberfläche von Zylinder: ${zylinder1.getOberflaeche()}`);
+console.log();
+
+const zylinder1 = new Zylinder(6, 10);
+
+console.log(`Volumen von Zylinder    : ${zylinder1.getVolumen()}`    );
+console.log(`Oberfläche von Zylinder : ${zylinder1.getOberflaeche()}`);
+console.log(`Grundfläche von Zylinder: ${zylinder1.getFlaeche()}`    );
+
+console.log();
