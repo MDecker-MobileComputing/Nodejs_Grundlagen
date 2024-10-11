@@ -48,7 +48,7 @@ class Student {
 
     toString() {
 
-            return `Matrikelnr: ${this._matrikelnummer}, Vorname: ${this._vorname}, Nachname: ${this._nachname}`;
+        return `Matrikelnr: ${this._matrikelnummer}, Vorname: ${this._vorname}, Nachname: ${this._nachname}`;
     }
 
 }
@@ -57,7 +57,7 @@ console.log();
 
 const student1 = new Student( 123456, "Max", "Mustermann" );
 
-console.log( student1.toString() );
+console.log( student1.toString() ); // toString() muss explizit aufgerufen werden!
 
 console.log( `Vorname Student vor Änderung: ${student1.vorname}` );
 student1.vorname = "Maximilian";
