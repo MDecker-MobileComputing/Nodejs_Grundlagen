@@ -48,11 +48,12 @@ class Student {
 
     toString() {
 
-            return `Matrikelnummer: ${this._matrikelnummer}, Vorname: ${this._vorname}, Nachname: ${this._nachname}`;
+            return `Matrikelnr: ${this._matrikelnummer}, Vorname: ${this._vorname}, Nachname: ${this._nachname}`;
     }
 
 }
 
+console.log();
 
 const student1 = new Student( 123456, "Max", "Mustermann" );
 
