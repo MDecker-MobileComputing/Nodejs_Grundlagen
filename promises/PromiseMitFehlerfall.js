@@ -1,20 +1,20 @@
 
 
- /**
-  * Funktion simuliert einen API-Zugriff (z.B. Web-API oder Auslesen lokaler Sensor), mit dem
-  * der die aktuelle Lufttemperatur am Aufenthaltsort des Nutzers zurückgegeben wird.
-  * Bei diesem API-Zugriff handelt es sich um eine "potenziell langlaufende Operation".
-  * <br><br>
-  *
-  * Funktion liefert in 50% der Aufrufe einen Fehler zurück. In Abhängigkeit von einem
-  * Zufallsgenerator wird entweder
-  *
-  * * ein Promise-Objekt zurückgeliefert, bei dem nach einer Sekunde die Callback-Methode
-  *   für den Erfolgsfall aufgerufen wird (die Temperatur ist dann immer 5°).
-  *
-  * * oder ein Promise-Objekt zurückgeliefert, bei dem nach einer halben Sekunde die
-  *   Callback-Methode für den Fehlerfall aufgerufen wird.
-  */
+/**
+ * Funktion simuliert einen API-Zugriff (z.B. Web-API oder Auslesen lokaler Sensor), mit dem
+ * der die aktuelle Lufttemperatur am Aufenthaltsort des Nutzers zurückgegeben wird.
+ * Bei diesem API-Zugriff handelt es sich um eine "potenziell langlaufende Operation".
+ * <br><br>
+ *
+ * Funktion liefert in 50% der Aufrufe einen Fehler zurück. In Abhängigkeit von einem
+ * Zufallsgenerator wird entweder
+ *
+ * * ein Promise-Objekt zurückgeliefert, bei dem nach einer Sekunde die Callback-Methode
+ *   für den Erfolgsfall aufgerufen wird (die Temperatur ist dann immer 5°).
+ *
+ * * oder ein Promise-Objekt zurückgeliefert, bei dem nach einer halben Sekunde die
+ *   Callback-Methode für den Fehlerfall aufgerufen wird.
+ */
 async function getTemperatur() {
 
   const zufallszahl = Math.random(); // Zufallszahl (gleichverteilt) zwischen 0.0 und 1.0 erzeugen.
@@ -60,10 +60,10 @@ function main_naiv() {
 }
 
 
- /**
-  * Aufruf der asynchronen Methode `getTemperatur()`, Promise-Objekt wird mit
-  * `then()` und `catch()` ausgewertet.
-  */
+/**
+ * Aufruf der asynchronen Methode `getTemperatur()`, Promise-Objekt wird mit
+ * `then()` und `catch()` ausgewertet.
+ */
 async function main_then() {
 
   const temperaturPromise = getTemperatur();
@@ -79,10 +79,10 @@ async function main_then() {
 }
 
 
- /**
-  * Aufruf der asynchronen Methode `getTemperatur()` mit `await`, für Fehlerbehandlung
-  * wird ein `try`-`catch`-Block verwendet.
-  */
+/**
+ * Aufruf der asynchronen Methode `getTemperatur()` mit `await`, für Fehlerbehandlung
+ * wird ein `try`-`catch`-Block verwendet.
+ */
 async function main_await() {
 
   try {
@@ -101,8 +101,8 @@ async function main_await() {
 
 // **********************************************************************************************************************************
 
-main_naiv();
+//main_naiv();
 
 //main_then();
 
-//main_await();
+main_await();
