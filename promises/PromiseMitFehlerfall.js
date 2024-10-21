@@ -90,13 +90,12 @@ async function main_await() {
     const temperaturResolved = await getTemperatur();
 
     console.log(`\nTemperatur: ${temperaturResolved} Grad Celsius\n`);
-    
+
   } catch (fehlerObjekt) {
 
     console.log(`\nFehler aufgetreten: ${fehlerObjekt}\n`);
   }
 }
-
 
 
 // **********************************************************************************************************************************
