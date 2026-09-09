@@ -2,6 +2,8 @@
 console.log();
 
 let myVariable;
+
+// myVariable is declared but not initialized
 let description = typeof( myVariable );
 console.log( myVariable + ": " + description );
 
