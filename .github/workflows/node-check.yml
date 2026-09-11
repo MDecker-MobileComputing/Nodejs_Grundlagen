@@ -16,4 +16,4 @@ jobs:
         while IFS= read -r file
         do
           node --check "$file"
-        done < <(find . -name "*.js")
+        done < <(find . -type d \( -name SyntaxErrors -o -name StrictMode \) -prune -o -name "*.js" -type f -print)
