@@ -1,54 +1,54 @@
 /**
- * Beispiel für Verwendung Schlüsselwörter "get" und "set" in einer Klasse.
+ * Example showing how to use the "get" and "set" keywords in a class.
  *
- * Für die Matrikelnummer gibt es nur einen Getter, aber keinen Setter.
+ * The student ID has a getter but no setter.
  */
 class Student {
 
-    constructor(matrikelnummer, vorname, nachname) {
+    constructor(studentId, firstName, lastName) {
 
-        this._matrikelnummer = matrikelnummer;
-        this._vorname        = vorname;
-        this._nachname       = nachname;
+        this._studentId = studentId;
+        this._firstName = firstName;
+        this._lastName  = lastName;
     }
 
 
-    get matrikelnummer() {
+    get studentId() {
 
-        return this._matrikelnummer;
+        return this._studentId;
     }
 
 
-    get vorname() {
+    get firstName() {
 
-        return this._vorname;
+        return this._firstName;
     }
 
-    set vorname(vorname) {
+    set firstName(firstName) {
 
-        this._vorname = vorname;
-    }
-
-
-    get nachname() {
-
-        return this._nachname;
-    }
-
-    set nachname(nachname) {
-
-        this._nachname = nachname;
+        this._firstName = firstName;
     }
 
 
-    getVollerName() {
+    get lastName() {
 
-        return `${this._vorname} ${this._nachname}`;
+        return this._lastName;
+    }
+
+    set lastName(lastName) {
+
+        this._lastName = lastName;
+    }
+
+
+    getFullName() {
+
+        return `${this._firstName} ${this._lastName}`;
     }
 
     toString() {
 
-        return `Matrikelnr: ${this._matrikelnummer}, Vorname: ${this._vorname}, Nachname: ${this._nachname}`;
+        return `Student ID: ${this._studentId}, First name: ${this._firstName}, Last name: ${this._lastName}`;
     }
 
 }
@@ -57,9 +57,9 @@ console.log();
 
 const student1 = new Student( 123456, "Max", "Mustermann" );
 
-console.log( student1.toString() ); // toString() muss explizit aufgerufen werden!
+console.log( student1.toString() ); // toString() must be called explicitly!
 
-console.log( `Vorname Student vor Änderung: ${student1.vorname}` );
-student1.vorname = "Maximilian";
+console.log( `Student first name before change: ${student1.firstName}` );
+student1.firstName = "Maximilian";
 
 console.log( student1.toString() );
