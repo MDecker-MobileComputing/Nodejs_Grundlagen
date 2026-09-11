@@ -1,6 +1,6 @@
 
 
-const getDiceNumber1 = () => {
+const getRandomDiceNumber1 = () => {
 
     return Math.floor( Math.random() * 6 ) + 1;
 }
@@ -11,12 +11,12 @@ const getDiceNumber1 = () => {
  * returns a value, we can omit the curly braces and
  * "return".
  */
-const getDiceNumber2 = () => Math.floor( Math.random() * 5 ) + 1;
+const getRandomDiceNumber2 = () => Math.floor( Math.random() * 5 ) + 1;
 
 console.log( "\nTen dice numbers from function 1:" )
 for ( let i = 1; i <= 10; i++ ) {
 
-    let diceNumber = getDiceNumber1();
+    let diceNumber = getRandomDiceNumber1();
     console.log( "  " + diceNumber );
 }
 
@@ -24,6 +24,6 @@ for ( let i = 1; i <= 10; i++ ) {
 console.log( "\nTen dice numbers from function 2:" )
 for ( let i = 1; i <= 10; i++ ) {
 
-    let diceNumber = getDiceNumber2();
+    let diceNumber = getRandomDiceNumber2();
     console.log( "  " + diceNumber );
 }
