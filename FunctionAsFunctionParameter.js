@@ -1,6 +1,7 @@
 
 const numbersArray = [ 2, 5, -12, 44 ];
 
+
 /*
  * Function that takes another function as parameter.
  */
@@ -15,7 +16,7 @@ function processArray( callback ) {
 
 
 /*
- * Function to be passed to processArray().
+ * Function to be passed to processArray(): Check if a number is even or odd.
  */
 const function1 = number => { 
 
@@ -31,7 +32,7 @@ const function1 = number => { 
 
 
 /*
- * Function to be passed to processArray().
+ * Function to be passed to processArray(): Calculate the square of a number.
  */
 const function2 = number => { 
 
